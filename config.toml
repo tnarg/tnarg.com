@@ -1,3 +1,37 @@
 baseURL = 'https://tnarg.com/'
 languageCode = 'en-us'
 title = 'Grant Monroe [tnarg.com]'
+theme = "terminal"
+paginate = 5
+
+[params]
+  # dir name of your main content (default is `content/posts`).
+  # the list of set content will show up on your index page (baseurl).
+  contentTypeName = "posts"
+
+  # ["orange", "blue", "red", "green", "pink"]
+  themeColor = "blue"
+
+[languages]
+  [languages.en]
+    languageName = "English"
+    title = "TNARG"
+    subtitle = "The personal home page of Grant Monroe"
+    owner = ""
+    keywords = ""
+    copyright = "© 2022, Grant Monroe"
+    menuMore = "Show more"
+    readMore = "Read more"
+    readOtherPosts = "Read other posts"
+    missingContentMessage = "Page not found..."
+    missingBackButtonLabel = "Back to home page"
+
+    [languages.en.params.logo]
+      logoText = "TNARG"
+      logoHomeLink = "/"
+
+    [languages.en.menu]
+      [[languages.en.menu.main]]
+        identifier = "about"
+        name = "About"
+        url = "/about"
